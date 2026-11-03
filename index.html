@@ -28,6 +28,7 @@
 :root { --c-canvas: #15170f; --c-surface: #1d2015; --c-ink: #efeadf; --c-ink-soft: #b5b6a4; --c-accent: #cf6a44; --c-accent-ink: #1b0f09; --c-accent-deep: #cf6a44; --f-display: "Piazzolla", "Georgia", "Times New Roman", serif; --f-text: "Manrope", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<style>/* karta */ .s-map{margin-top:24px;display:grid;gap:14px}.s-map h3{margin:0;font-size:1.15rem}.s-map__frame{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--hair);background:var(--tint);aspect-ratio:16/7}.s-map__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.s-map__actions{display:flex;flex-wrap:wrap;gap:10px}@media (max-width:640px){.s-map__frame{aspect-ratio:4/3}.s-map__actions .s-btn{flex:1 1 100%;text-align:center}}</style>
 </head>
 <body class="s-prod" id="top" data-wa="79124559474" data-tg="+79124559474" data-max="">
 <header class="s-bar" data-s-bar>
@@ -134,6 +135,16 @@
         <a class="s-btn s-btn--ghost" data-s-msg="telegram" href="#">Telegram</a>
       </div>
     </div>
+    <!-- karta -->
+    <div class="s-map">
+      <h3>Как проехать</h3>
+      <div class="s-map__frame"><iframe src="https://yandex.ru/map-widget/v1/?ll=53.307996%2C56.871912&z=16&pt=53.307996%2C56.871912%2Cpm2rdl" title="Карта: как проехать" loading="lazy" allowfullscreen></iframe></div>
+      <div class="s-map__actions">
+        <a class="s-btn s-btn--ghost" href="https://yandex.ru/maps/?rtext=~56.871912%2C53.307996&rtt=auto" target="_blank" rel="noopener">Маршрут в Яндекс Картах</a>
+        <a class="s-btn s-btn--ghost" href="https://2gis.ru/izhevsk/firm/70000001054132429" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+      </div>
+    </div>
+    <!-- /karta -->
   </section>
 </main>
 <footer class="s-foot"><p>Rigmaer · Ижевск</p><p>Кухни, шкафы и гардеробные на заказ в Ижевске</p></footer>
